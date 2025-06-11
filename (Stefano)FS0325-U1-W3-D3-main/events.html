@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gli EVENTI in HTML+JS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Applichiamo degli event listeners a elementi della pagina!</h1>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+        repellendus magni optio facilis sit quos eum magnam libero provident
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+        repellendus magni optio facilis sit quos eum magnam libero provident
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+        repellendus magni optio facilis sit quos eum magnam libero provident
+        ullam tenetur neque laudantium in soluta quisquam, tempore ut odit
+        maxime?
+      </p>
+      <h2>Creiamo qualche bottone</h2>
+      <div id="btn-container">
+        <button onclick="buttonClick(event)" onmouseenter="buttonHover(event)">
+          CREATO IN HTML
+        </button>
+        <!-- qui ci metterò un bottone interamente creato da JS! -->
+      </div>
+      <h2>Creiamo un campo input</h2>
+      <input type="text" onkeypress="inputTyping(event)" />
+      <!-- qui finirà l'orso -->
+    </main>
+    <script src="./js/events.js"></script>
+  </body>
+</html>
