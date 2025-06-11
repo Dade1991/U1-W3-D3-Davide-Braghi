@@ -54,7 +54,6 @@ label {
 input {
   border-radius: 20px;
   border: solid, 3px, blue;
-  margin-right: 20px;
   width: 200px;
 }
 
@@ -66,19 +65,34 @@ input {
   padding-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: beige;
+  /* background-color: beige; */
   border-radius: 20px;
-  box-shadow: 10px, 10px, 10px, black;
 }
 
-.buttonDelete {
-  /* background-color: white; */
+#deleteButton {
+  background-color: white;
   color: blue;
   font-weight: 500;
   border-radius: 15px;
   padding-left: 20px;
   padding-right: 20px;
   border: solid, 1px, blue;
+}
+
+.taskBox {
+  /* display: inline-block; */
+  width: 100%;
+  margin-top: 10px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: beige;
+  border-radius: 20px;
+}
+
+.taskBox li {
+  display: inline-block;
 }
 
 ul {

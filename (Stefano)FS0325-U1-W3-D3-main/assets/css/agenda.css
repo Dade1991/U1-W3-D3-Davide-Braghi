@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
   background: hwb(237 45% 0%);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -50,7 +50,7 @@ form label {
 form button {
   margin-top: 2em;
   font-size: 1.1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 form input {
@@ -76,6 +76,11 @@ form input {
   background-color: red;
   color: white;
   border-radius: 10px;
+}
+
+.taskDeleter {
+  background-color: red;
+  color: white;
 }
 
 footer {

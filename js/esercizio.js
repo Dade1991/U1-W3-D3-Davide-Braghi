@@ -15,10 +15,12 @@ myListForm.addEventListener(`submit`, (e) => {
   itemBox.classList.add(`taskBox`)
   // riempio la mia <ul> con i dati di providedText
   itemBox.innerHTML = `
-  <li>${providedText.itemText}</li>
-  <button onclick="deleteBox(event)">Delete</button>
+  <li onclick="underlineBox(event)" id="underlineButton">${providedText.itemText}</li>
+  <button onclick="deleteBox(event)" id="deleteButton">Delete</button>
 `
-  // prendo ed APPENDO la mia <ul> aal'interno del contenitore <div> `saved-list`, che mi ritornerà gli elementi aggiunti tutti in fila
+  // console.log(itemBox)
+
+  // prendo ed APPENDO la mia <ul> al'interno del contenitore <div> `saved-list`, che mi ritornerà gli elementi aggiunti tutti in fila
   const newText = document.getElementById(`saved-list`)
   newText.appendChild(itemBox)
   // reset x svuotare i campi
@@ -26,18 +28,18 @@ myListForm.addEventListener(`submit`, (e) => {
   myListForm.reset()
 })
 
-const deleteBox = (e) => {
-  e.target.parentElement.remove()
+const underlineBox = (e) => {
+  e.target.style.textDecoration = `line-through`
+  console.log(e)
+}
+
+const deleteBox = (a) => {
+  a.target.parentElement.remove()
 
   // console.log(`giusto`, e.target)
 }
 
-// const underlinedItem = document.getElementsByClassName(`taskBox >`)
+// const underlineItem = document.getElementsByClassName(`taskBox >`)
 // const uText = {
 //   TaskBox: style.textDecoration = `line-through`
 // }
-// underlinedItem.addEventListener(`click`, (e) => {
-//   // e.preventDefault()
-//   e.preventDefault()
-//   underlinedItem.style.
-// })
