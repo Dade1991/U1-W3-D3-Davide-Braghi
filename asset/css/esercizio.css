@@ -1,0 +1,78 @@
+body {
+  /* width: 100vw; */
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: linear-gradient(aqua, rgb(0, 128, 68));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: blue;
+}
+
+main {
+  /* width: 100%; */
+  text-align: center;
+}
+
+#new-list {
+  display: inline-block;
+  width: 100%;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: beige;
+  border-radius: 20px;
+}
+
+form div {
+  display: inline-block;
+}
+
+#addButton {
+  background-color: white;
+  color: blue;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid, 1px, blue;
+}
+
+label {
+  padding-right: 20px;
+}
+
+input {
+  border-radius: 20px;
+  border: solid, 3px, blue;
+  margin-right: 20px;
+  width: 200px;
+}
+
+task-box button {
+  color: blue;
+  background-color: beige;
+}
+
+.buttonDelete {
+  /* background-color: white; */
+  color: blue;
+  font-weight: 500;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid, 1px, blue;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
