@@ -12,7 +12,7 @@ myListForm.addEventListener(`submit`, (e) => {
   // creo una <ul> vuota
   const itemBox = document.createElement(`ul`)
   // creo un classe per la <ul>
-  itemBox.classList.add(`task-box`)
+  itemBox.classList.add(`taskBox`)
   // riempio la mia <ul> con i dati di providedText
   itemBox.innerHTML = `
   <li>${providedText.itemText}</li>
@@ -22,10 +22,22 @@ myListForm.addEventListener(`submit`, (e) => {
   const newText = document.getElementById(`saved-list`)
   newText.appendChild(itemBox)
   // reset x svuotare i campi
+
   myListForm.reset()
 })
 
 const deleteBox = (e) => {
-  console.log(`giusto`, e.target)
   e.target.parentElement.remove()
+
+  // console.log(`giusto`, e.target)
 }
+
+// const underlinedItem = document.getElementsByClassName(`taskBox >`)
+// const uText = {
+//   TaskBox: style.textDecoration = `line-through`
+// }
+// underlinedItem.addEventListener(`click`, (e) => {
+//   // e.preventDefault()
+//   e.preventDefault()
+//   underlinedItem.style.
+// })

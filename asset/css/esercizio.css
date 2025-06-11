@@ -30,6 +30,7 @@ main {
   padding-bottom: 20px;
   background-color: beige;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 form div {
@@ -57,16 +58,24 @@ input {
   width: 200px;
 }
 
-task-box button {
-  color: blue;
+#saved-list {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: beige;
+  border-radius: 20px;
+  box-shadow: 10px, 10px, 10px, black;
 }
 
 .buttonDelete {
   /* background-color: white; */
   color: blue;
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-left: 20px;
   padding-right: 20px;
   border: solid, 1px, blue;
